@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-ivory: #fbf6ee;
+  --color-cream: #f4ebdd;
+  --color-blush: #e8c4c4;
+  --color-rose: #c9868f;
+  --color-wine: #5b1a2b;
+  --color-deep: #2e0a15;
+  --color-gold: #b99557;
+  --color-ink: #3a2a2d;
+  --font-serif: var(--font-cormorant), Georgia, serif;
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-script: var(--font-script), cursive;
+}
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background: var(--color-ivory);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--color-blush);
+  color: var(--color-deep);
+}
+
+/* paper grain for the letter */
+.paper {
+  background-color: #fffdf8;
+  background-image:
+    radial-gradient(rgba(91, 26, 43, 0.03) 1px, transparent 1px),
+    linear-gradient(180deg, #fffdf8, #faf3e6);
+  background-size: 4px 4px, 100% 100%;
+}
+
+/* ruled lines accent */
+.rule-gold {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--color-gold), transparent);
+}
+
+@keyframes drift {
+  0% { transform: translate3d(0, 0, 0); opacity: 0; }
+  15% { opacity: var(--o, 0.5); }
+  100% { transform: translate3d(var(--dx, 20px), -110vh, 0); opacity: 0; }
+}
+
+@keyframes twinkle {
+  0%, 100% { opacity: 0.25; transform: scale(0.8); }
+  50% { opacity: 1; transform: scale(1.15); }
+}
+
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  14% { transform: scale(1.08); }
+  28% { transform: scale(1); }
+  42% { transform: scale(1.06); }
+  70% { transform: scale(1); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .particle, .twinkle, .heartbeat { animation: none !important; }
+}
