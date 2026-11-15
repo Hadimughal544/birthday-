@@ -96,15 +96,18 @@ export const reasons = [
 ];
 
 // ✎ EDIT — replace with your own words. Each string is one paragraph.
+// data/content.ts
 export const PERSONAL_LETTER = {
-  greeting: "My Love,",
+  greeting: "My Shona Motka Bubu,",
   paragraphs: [
-    "Sometimes I wonder how I got so lucky to find someone like you…",
-    "(Write your own words here — what she means to you, a memory that still makes you smile, what you hope for her this year. Plain and honest is the most beautiful kind.)",
-    "Thank you for being you. Thank you for choosing me.",
+    "Happy Birthday, my love. Today is the day the world received one of its most precious gifts, and I am the luckiest person alive because that gift is mine.",
+    "I still remember the day I met you at university. I did not know it then, but my life was about to change forever. From that very first moment, you became my favorite person, and every day since has only made me fall for you more.",
+    "You are not just a part of my life, you are the reason it feels so complete. Your smile fixes my worst days, your voice is my peace, and just being near you feels like home. I do not know what I did to deserve you, but I thank God for you every single day.",
+    "If I could go back to the very beginning, I would walk the same road all over again just to find you. I would choose you in every lifetime, in every version of my story.",
+    "On your special day, I wish you endless happiness, success in everything you dream of, and a heart that is always full of love. And I promise to stand beside you, to love you, and to make you feel how important you are to me, today and every day after.",
   ],
-  signoff: "Always yours,",
-  signature: "Your husband", // ✎ EDIT — or your name
+  signoff: "Forever and always yours,",
+  signature: "Tera Bnda Haider",
 };
 
 export const FINAL_MESSAGE = {
