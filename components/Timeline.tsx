@@ -3,6 +3,7 @@
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
 import { useRef } from "react";
 import Reveal from "./Reveal";
+import Photo from "./Photo";
 import { timeline } from "@/data/content";
 
 export default function Timeline() {
@@ -12,7 +13,7 @@ export default function Timeline() {
   const height = useTransform(smooth, [0, 1], ["0%", "100%"]);
 
   return (
-    <section className="relative bg-cream/60 px-6 py-28 sm:py-36">
+    <section className="relative overflow-x-clip bg-cream/60 px-6 py-28 sm:py-36">
       <div className="mx-auto max-w-4xl">
         <Reveal className="mb-20 text-center">
           <p className="mb-3 text-[11px] uppercase tracking-[0.4em] text-rose">Our Story</p>
@@ -54,6 +55,24 @@ export default function Timeline() {
                     ) : null}
                     <h3 className="font-serif text-3xl text-wine">{e.title}</h3>
                     <p className="mt-3 text-base leading-7 text-ink/75">{e.text}</p>
+                  </motion.div>
+
+                  <motion.div
+                    initial={{ opacity: 0, x: left ? 36 : -36 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    viewport={{ once: true, margin: "-80px" }}
+                    transition={{ duration: 1.1, delay: 0.15, ease: [0.22, 1, 0.36, 1] }}
+                    className={`mt-6 md:mt-0 md:row-start-1 ${left ? "md:col-start-2" : "md:col-start-1"}`}
+                  >
+                    <div className="group overflow-hidden rounded-[3px] shadow-[0_14px_36px_-14px_rgba(91,26,43,0.45)]">
+                      <Photo
+                        src={e.image}
+                        alt={e.title}
+                        sizes="(min-width: 768px) 400px, 90vw"
+                        className="aspect-[3/3] w-full"
+                        imgClassName="transition-transform duration-[1400ms] ease-out group-hover:scale-[1.05]"
+                      />
+                    </div>
                   </motion.div>
                 </li>
               );

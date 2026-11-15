@@ -22,7 +22,7 @@ export default function FinalMessage() {
           </div>
         </Reveal>
         <Reveal delay={0.1} as="h2">
-          <span className="block font-serif text-[clamp(2.4rem,8vw,5rem)] font-light italic leading-[1.1] text-wine">
+          <span className="block font-serif text-balance text-[clamp(2.4rem,8vw,5rem)] font-light italic leading-[1.1] text-wine">
             {F.heading} <span className="not-italic">❤️</span>
           </span>
         </Reveal>

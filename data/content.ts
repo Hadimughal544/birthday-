@@ -12,16 +12,16 @@ export const HER_NAME = "Zunaira";
 export const BIRTHDAY = "November 16";
 
 // ✎ EDIT — shown on the timeline. Leave as "" to hide the date.
-export const RELATIONSHIP_START_DATE = "";
+export const RELATIONSHIP_START_DATE = "04-12-2022"; // MM-DD-YYYY
 export const SPECIAL_DATE = "";
 export const OUR_FIRST_MEMORY =
-  "One of the moments I'll never forget… (write your first memory here)";
+  "One of the moments I'll never forget… My birthday became unforgettable the day we went to the Mall of Lahore together. Just walking beside you and sharing that time was enough to make it perfect. It was our very first memory, and it is still my favorite.";
 
 export const musicSrc = "/audio/song.mp3";
 export const musicTitle = "Our song"; // ✎ EDIT
 
 export const hero = {
-  image: "/images/hero.jpg",
+  image: "/images/hero.jpeg",
   eyebrow: "To My Favorite Person",
   title: "Happy Birthday, My Love",
   subtitle:
@@ -31,30 +31,34 @@ export const hero = {
 export const intro = {
   heading: "Another year of you.\nAnother year I'm grateful for.",
   // ✎ EDIT
-  body: "I made this little corner of the internet just for you — a place to gather some of our moments, some of the things I adore about you, and a few words I don't say out loud nearly enough.",
+  body: "I made this little corner of my love just for you  a place to gather some of our moments, some of the things I adore about you, and a few words I don't say out loud nearly enough.",
 };
 
-export type TimelineEntry = { title: string; date?: string; text: string };
+export type TimelineEntry = { title: string; date?: string; text: string; image: string };
 
 // ✎ EDIT — replace each text with your real story.
 export const timeline: TimelineEntry[] = [
   {
     title: "The Beginning",
     date: RELATIONSHIP_START_DATE,
-    text: "Our story started… (write how it all began).",
+    text: "Our story started… It all started at university. I met you, and just like that, my heart was yours. I still miss those days, the craze, the butterflies, the way I fell in love with you. That is where our story began..",
+    image: "/images/timeline-01.jpeg",
   },
   {
     title: "The First Memory",
     text: OUR_FIRST_MEMORY,
+    image: "/images/timeline-02.jpeg",
   },
   {
     title: "The Journey",
-    text: "Through all the little moments, the ordinary days that turned into everything… (write about your journey).",
+    text: "Through all the little moments, the ordinary days that turned into everything… You are the most important person in my life. Every day with you feels like a gift, and I love you more than words can say. Happy Birthday, my love. May this year bring you all the happiness you deserve.",
+    image: "/images/timeline-03.jpeg",
   },
   {
     title: "Today",
     date: SPECIAL_DATE,
-    text: "And here we are — and I'd choose you all over again.",
+    text: "And here we are — and I'd choose you all over again.After everything we have shared, my answer is still you. You are my safest place and my greatest blessing. Happy Birthday, my love. I would choose you in every lifetime",
+    image: "/images/timeline-04.jpeg",
   },
 ];
 
@@ -67,12 +71,12 @@ export type GalleryItem = {
 
 // ✎ EDIT — captions, order and shapes. Add more entries as you like.
 export const gallery: GalleryItem[] = [
-  { src: "/images/memory-01.jpg", caption: "That smile ❤️", shape: "tall" },
-  { src: "/images/memory-02.jpg", caption: "One of my favorite days.", shape: "square" },
-  { src: "/images/memory-03.jpg", caption: "Just us.", shape: "wide" },
-  { src: "/images/memory-04.jpg", caption: "Forever one of my favorite memories.", shape: "portrait" },
-  { src: "/images/memory-05.jpg", caption: "Pure happiness.", shape: "square" },
-  { src: "/images/memory-06.jpg", caption: "Always you.", shape: "tall" },
+  { src: "/images/moment1.jpeg", caption: "That smile ❤️", shape: "tall" },
+  { src: "/images/moment2.jpeg", caption: "One of my favorite days.", shape: "square" },
+  { src: "/images/moment3.jpeg", caption: "Just us.", shape: "tall" },
+  { src: "/images/moment4.jpeg", caption: "Forever one of my favorite memories.", shape: "portrait" },
+  { src: "/images/moment5.jpeg", caption: "Pure happiness.", shape: "wide" },
+  { src: "/images/moment6.jpeg", caption: "Always you.", shape: "tall" },
 ];
 
 export const photoMoment = {

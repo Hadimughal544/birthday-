@@ -14,7 +14,7 @@ import MusicPlayer from "@/components/MusicPlayer";
 export default function Page() {
   return (
     <MotionConfig reducedMotion="user">
-      <main>
+      <main className="overflow-x-clip">
         <Hero />
         <Intro />
         <Timeline />

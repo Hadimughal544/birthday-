@@ -23,7 +23,7 @@ export default function Hero() {
           alt={`${HER_NAME}`}
           sizes="100vw"
           priority
-          className="h-full w-full"
+          className="h-full w-full object-contain "
         />
       </motion.div>
 
@@ -43,7 +43,7 @@ export default function Hero() {
         </motion.p>
 
         <motion.h1
-          className="font-serif text-[clamp(2.6rem,9.5vw,6.5rem)] font-light italic leading-[1.02] text-ivory"
+          className="font-serif text-balance text-[clamp(2.4rem,9vw,6.5rem)] font-light italic leading-[1.05] text-ivory"
           initial={{ opacity: 0, y: 30, filter: "blur(8px)" }}
           animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
           transition={{ duration: 1.6, delay: 1.3, ease }}
@@ -59,7 +59,7 @@ export default function Hero() {
         />
 
         <motion.p
-          className="mt-6 max-w-md text-[0.95rem] leading-relaxed text-ivory/85 sm:text-base"
+          className="mt-6 max-w-[22rem] text-balance text-[0.95rem] sm:max-w-md leading-relaxed text-ivory/85 sm:text-base"
           initial={{ opacity: 0, y: 14 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.3, delay: 2.2, ease }}
